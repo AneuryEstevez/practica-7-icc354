@@ -34,7 +34,7 @@
             <td>{{reserva.id}}</td>
             <td>{{reserva.nombre}}</td>
             <td>{{reserva.laboratorio}}</td>
-            <td>{{reserva.fechaReserva}}</td>
+            <td>{{ formatDate(reserva.fechaReserva) }}</td>
             <td>
               <button class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#editModal" @click="openEditModal(reserva)">Editar</button>
               <button class="btn btn-danger" @click="removeReserva(reserva.idReserva)">Eliminar</button>
